@@ -7,6 +7,7 @@ import { Confirmation } from '../pages/Confirmation';
 import { PlantSelect } from '../pages/PlantSelect';
 
 import colors from '../styles/colors';
+import { PlantSave } from '../pages/PlantSave';
 
 const stackRouter = createStackNavigator();
 
@@ -37,6 +38,11 @@ const AppRouter : React.FC = ()=>(
         <stackRouter.Screen
         name="PlantSelect"
         component={PlantSelect}
+        />
+
+        <stackRouter.Screen
+        name="PlantSave"
+        component={PlantSave}
         />
 
     </stackRouter.Navigator>
