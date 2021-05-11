@@ -41,9 +41,19 @@ export function UserIdentification() {
   async function handleSumit() {
     if(!name)
       return Alert.alert('Me diz como chamar você 😥')
-    
-    await AsyncStorage.setItem('@plantmanager:user', name);
-    navagation.navigate("Confirmation");
+    try{
+      await AsyncStorage.setItem('@plantmanager:user', name);
+      navagation.navigate("Confirmation",{
+        title:'Prontinho',
+        subtitle: `Agora vamos começar a cuidar das suas ${"\n"}
+        plantinhas com muito cuidado.`,
+        buttonTitle: 'Começar',
+        icon:'smile',
+        nextScreen: 'PlantSelect'
+      });
+    }catch{
+      Alert.alert('Não foi possivel salvar o seu nome. 😥')
+    }
   }
 
   return (
