@@ -9,7 +9,6 @@ import { PlantSelect } from "../pages/PlantSelect";
 import colors from "../styles/colors";
 import { PlantSave } from "../pages/PlantSave";
 import { MyPlants } from "../pages/MyPlants";
-import { Login } from "../pages/Geral/pages/login";
 
 const stackRouter = createStackNavigator();
 
@@ -22,11 +21,6 @@ const AppRouter: React.FC = () => (
       },
     }}
   >
-    <stackRouter.Screen
-      name="login"
-      component={Login}
-    />
-
     <stackRouter.Screen name="Welcome" component={Welcome} />
 
     <stackRouter.Screen

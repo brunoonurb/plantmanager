@@ -1,12 +1,12 @@
 {
   "expo": {
-    "name": "IEQ",
-    "slug": "IEQ",
+    "name": "plantmanager",
+    "slug": "plantmanager",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon_ieq.png",
+    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash_ieq.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
