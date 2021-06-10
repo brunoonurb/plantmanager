@@ -1,4 +1,14 @@
 export default {
+
+  primaryColor:'#5CC6BA',
+  secondaryColor:'#F1F5F4',
+  textLight:'#FFFFFF',
+  textDark:'#000000',
+  background: '#E5E5E5',
+  text:'#A0A0A0',
+  errorColo:'#FF0707',
+  textHeading:'#737070',
+
   green: '#32B768',
   green_dark: '#2B7A4B',
   green_light: '#DAF2E4',
@@ -7,7 +17,6 @@ export default {
   body_dark: '#738078',
   body_light: '#AAB2AD',
 
-  background: '#FFFFFF',
   shape: '#F0F0F0',
   white: '#FFFFFF',
   gray: '#CFCFCF',
